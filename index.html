@@ -78,13 +78,13 @@ body {
 
 <div class="header">
   <h2>Sistemas Distribuídos : Trabalho Prático</h2>
-  <h2> Maria Clara de C. Salik</h2>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
       <h2>Simulador SMPL : Algoritmo VRing</h2>
+      <h2> Maria Clara de C. Salik</h2>
       <h3>Tarefa 0 : </h3>
       <p> Digitar, compilar e executar o programa exemplo, tempo.c </p>
       <p>-> Foi compilado o programa usando o makefile e executado o programa com ./tempo 3 </p>
@@ -93,19 +93,19 @@ body {
       <p>Fazer cada um dos processos testar o seguinte no anel. Implemente o teste com a função status() do SMPL e imprimir (printf) o resultado de cada teste executado. Por exemplo: “O processo i testou o processo j correto no tempo tal.” 
         <br>Foi acrescentado no case test um printf mostrando o teste correto do processo i no j (incrementando o token):  </p>
         
-        <p>case test: 
+        <p>case test:  </p>
 
-            if (status(processo[token].id) != 0) // processo falho não testa 
+            <p>if (status(processo[token].id) != 0) // processo falho não testa </p> 
 
-                break; 
+                <p>break; </p>
 
-            printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
+            <p>printf("O processo %d vai testar no tempo %4.1f\n", token, time()); </p> 
 
-            schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
+            <p>schedule(test, 30.0, token); // um novo teste daqui a esse tempo </p> 
 
-            printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time()); 
+            <p>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time()); </p> 
 
-            break; </p>
+            <p>break; </p>
       <p> Log de saída : </p>
         <h3>Tarefa 2 :</h3>
       <p> Cada processo correto executa testes até achar outro processo correto. Lembre-se de tratar o caso em que todos os demais processos estão falhos. Imprimir os testes e resultados.
@@ -113,73 +113,67 @@ body {
         
         <p>-> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
 
-        schedule(fault, 31.0, 2);  // vai falhar nesse tempo 
+        <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
 
-        schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
-      <p> Saída : </p>
+        <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
+      <p> Log de saída : </p>
         <h3>Tarefa 3 : </h3>
       <p> Cada processo mantém localmente o vetor State[N]. A entrada do vetor State[j] indica o estado do processo j. O estado de cada processo pode ser: -1 (unknown), 0 (correto) ou 1 (falho). Inicialize (para todos os processos) o State[N] com -1 (indicando estado “unknown”) para todos os demais processos e 0 para o próprio processo. Nesta tarefa ao executar um teste em um processo j, o testador atualiza a entrada correspondente no vetor State[j]. Em cada intervalo de testes, mostre o vetor State[N].
         <br>Foram feitas as seguintes alterações no case test tratando os estados (-1,0,1) e os possíveis eventos que podem ocorrer:
         </p>
       
-        <p> case test: 
+        <p> case test: </p>
 
-            if (status(processo[token].id) != 0) // processo falho não testa 
+            <p>if (status(processo[token].id) != 0) // processo falho não testa </p>
 
-                break; 
+                <p>break; </p>
 
-            printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
+            <p>printf("O processo %d vai testar no tempo %4.1f\n", token, time()); </p>
 
-            int t = (token+1)%N; // já que é um teste circular faço mod N 
+            <p>int t = (token+1)%N; // já que é um teste circular faço mod N </p>
 
-  
+            <p>while (status(processo[t].id) != 0 && t != token){  // enquanto não acha um correto e não testou todos </p>
 
-            while (status(processo[t].id) != 0 && t != token){  // enquanto não acha um correto e não testou todos 
+                <p>printf("O processo %d testou o processo %d falho no tempo %4.1f\n", token, t, time()); </p>
 
-                printf("O processo %d testou o processo %d falho no tempo %4.1f\n", token, t, time()); 
+                <p>// tratando eventos </p>
 
-                // tratando eventos 
+                <p>if (processo[token].State[t] == -1) // se em estado unknown </p>
 
-                if (processo[token].State[t] == -1) // se em estado unknown 
+                   <p> processo[token].State[t] = 1; // atualiza para estado falho </p>
 
-                    processo[token].State[t] = 1; // atualiza para estado falho 
+                <p>else if (processo[token].State[t]%2 == 0) // se par (Era correto e agora é falho -> evento) </p>
 
-                else if (processo[token].State[t]%2 == 0) // se par (Era correto e agora é falho -> evento) 
+                    <p>processo[token].State[t]++; // incrementa </p>
 
-                    processo[token].State[t]++; // incrementa 
+                <p>t = (t+1)%N; // vai para o proximo processo considerando que é um teste circular   </p>          
 
-                t = (t+1)%N; // vai para o proximo processo considerando que é um teste circular             
+            <p>}        </p>
+            <p>// tratando eventos </p>
 
-            }        
+           <p>if (processo[token].State[t] == -1) // se em estado unknown </p>
 
-             
+                <p>processo[token].State[t] = 0; // atualiza para estado correto </p>
 
-            // tratando eventos 
+            <p>else if (processo[token].State[t]%2 == 1) // se ímpar (Era falho e agora é correto -> evento)  </p>     
 
-            if (processo[token].State[t] == -1) // se em estado unknown 
+                <p>processo[token].State[t]++; // incrementa </p>
 
-                processo[token].State[t] = 0; // atualiza para estado correto 
+            <p>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time()); </p>               
 
-            else if (processo[token].State[t]%2 == 1) // se ímpar (Era falho e agora é correto -> evento)       
+            <p>printf("Vetor State resultante do processo %d: ", token); // mostra o vetor State </p>
 
-                processo[token].State[t]++; // incrementa 
+            <p>for(int j=0; j<N; j++){ </p>
 
-            printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time());                
+                <p>printf("%d ", processo[token].State[j]);</p> 
 
-            printf("Vetor State resultante do processo %d: ", token); // mostra o vetor State 
+            <p>} </p>
 
-            for(int j=0; j<N; j++){ 
+            <p>printf("\n"); </p>
 
-                printf("%d ", processo[token].State[j]); 
+            <p>schedule(test, 30.0, token); // um novo teste daqui a esse tempo </p>
 
-            } 
-
-            printf("\n"); 
-
-
-            schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
-
-            break; </p>
+            <p>break; </p>
         
         <p>Log da saída :</p>
         
