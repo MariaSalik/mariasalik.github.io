@@ -96,12 +96,12 @@ body {
         
         <p>case test:  </p>
 
-            <p>if (status(processo[token].id) != 0) // processo falho não testa </p> 
-                <p>  break; </p>
-            <p>printf("O processo %d vai testar no tempo %4.1f\n", token, time()); </p> 
-            <p>schedule(test, 30.0, token); // um novo teste daqui a esse tempo </p> 
-            <p>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time()); </p> 
-            <p>break; </p>
+            <br>if (status(processo[token].id) != 0) // processo falho não testa 
+                <br>  break; 
+            <br>printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
+            <br>schedule(test, 30.0, token); // um novo teste daqui a esse tempo  
+            <br>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time());  
+             break; </p>
       <p> Log de saída : </p>
       
       <img.src="tarefa1.png">
@@ -164,29 +164,25 @@ body {
         
         <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
 
-          schedule(fault, 31.0, 2);  // vai falhar nesse tempo 
-
-          schedule(recovery, 61.0, 2); // vai recuperar nesse tempo </p>
+          <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
+          <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
       
          <p>Log da saída :</p>
       
         <h3>Tarefa 4</h3>
       <p>Quando um processo correto testa outro processo correto obtém as informações de diagnóstico do processo testado sobre todos os processos do sistema exceto aqueles que testou nesta rodada, além do próprio testador. 
-        <br>
-        Através de um laço for acrescentado fora do laço de repetição while, para os testes corretos, é possivel salvar as informações fazendo uma cópia do vetor state : 
+      <p>- Através de um laço for acrescentado fora do laço de repetição while, para os testes corretos, é possivel salvar as informações fazendo uma cópia do vetor state :</p>
 
-        for (int j=(t+1)%N; j != token; j=(j+1)%N){  // copia o vetor state atualizando as informações do processo que esta testando sobre os demais que não foram testados na rodada 
-
-               processo[token].State[j] = processo[t].State[j];             
-
-        } 
+      <p> for (int j=(t+1)%N; j != token; j=(j+1)%N){  // copia o vetor state atualizando as informações do processo que esta testando sobre os demais que não foram testados na rodada 
+              <br> processo[token].State[j] = processo[t].State[j];             
+      <br>} 
       </p>
        <p>Log da saída :</p>
        <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
 
-          schedule(fault, 31.0, 2);  // vai falhar nesse tempo 
-
-          schedule(recovery, 61.0, 2); // vai recuperar nesse tempo </p>
+          <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
+          <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
+        
       
       <p>Log da saída :</p>
       
