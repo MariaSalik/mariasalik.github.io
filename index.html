@@ -121,13 +121,15 @@ body {
         <br>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time()); 
         <br>schedule(test, 30.0, token);
          break; </p>
-        
+        <p> Log da saída :</p>
+        <img.src="tarefa2.png">
       <p>- Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
-
+        
         <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
         <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
         
       <p> Log de saída : </p>
+      <img.src="tarefa2.2.png">
         <h3>Tarefa 3 : </h3>
       <p> Cada processo mantém localmente o vetor State[N]. A entrada do vetor State[j] indica o estado do processo j. O estado de cada processo pode ser: -1 (unknown), 0 (correto) ou 1 (falho). Inicialize (para todos os processos) o State[N] com -1 (indicando estado “unknown”) para todos os demais processos e 0 para o próprio processo. Nesta tarefa ao executar um teste em um processo j, o testador atualiza a entrada correspondente no vetor State[j]. Em cada intervalo de testes, mostre o vetor State[N].
       <p>- Foram feitas as seguintes alterações no case test tratando os estados (-1,0,1) e os possíveis eventos que podem ocorrer:</p>
@@ -161,14 +163,15 @@ body {
              break; </p>
         
         <p>Log da saída :</p>
+        <img.src="tarefa3.png">
         
         <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
 
           <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
           <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
       
-         <p>Log da saída :</p>
-      
+      <p>Log da saída :</p>
+      <img.src="tarefa3.2.png">
         <h3>Tarefa 4</h3>
       <p>Quando um processo correto testa outro processo correto obtém as informações de diagnóstico do processo testado sobre todos os processos do sistema exceto aqueles que testou nesta rodada, além do próprio testador. 
       <p>- Através de um laço for acrescentado fora do laço de repetição while, para os testes corretos, é possivel salvar as informações fazendo uma cópia do vetor state :</p>
@@ -178,6 +181,7 @@ body {
       <br>} 
       </p>
        <p>Log da saída :</p>
+       <img.src="tarefa4.png">
        <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
 
           <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
@@ -185,6 +189,7 @@ body {
         
       
       <p>Log da saída :</p>
+         <img.src="tarefa4.2.png">
       
       
 
