@@ -77,137 +77,140 @@ body {
 <body>
 
 <div class="header">
-  <h2>Trabalho da disciplina Sistemas Distribuídos</h2>
+  <h2>Sistemas Distribuídos : Trabalho Prático</h2>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>Algoritmo VRing</h2>
-      <h3>Tarefa 0</h3>
-      <p>Como primeiro passo do trabalho foi solicitado a compilação e execução corretas do código em tempo.c, que implementa apenas o agendamento dos testes de cada processo.</p>
-      <img src="./images/image0.png">
-      <h3>Tarefa 1</h3>
-      <p>Tarefa: fazer cada um dos processos testar o seguinte no anel. Implemente o teste com a função status() do SMPL e imprimir (printf) o resultado de cada teste executado. Por exemplo: “O processo i testou o processo j correto no tempo tal.” 
-        <br>Esta tarefa é feita apenas com a seguinte modificação: </p>
-        <img src="./images/image1.png">
-        <p>Checa-se o status do próximo processo do anel, token+1%N, e imprime de acordo com o status do processo testado.</p>
-        <img src="./images/image2.png">
-        <h3>Tarefa 2</h3>
-      <p>Tarefa: Cada processo correto executa testes até achar outro processo correto. Lembre-se de tratar o caso em que todos os demais processos estão falhos. Imprimir os testes e resultados.
-        <br>Esta tarefa é feita com a seguinte modificação:</p>  
-        <img src="./images/image3.png">
-        <p>Na linha 66 é salvo o índice do próximo processo do anel. O while da linha 67 é executado enquanto não se encontra um processo correto, ou seja, nodo[k].id != 0. Na linha 70 atualizamos o índice para o próximo processo, caso voltemos ao 
-        processo inicial (token) significa que testamos todos os processos do anel. O if da linnha 74 checa se testei todos falhos ou se houve um processo correto. </p>
-        <img src="./images/image4.png">
-        <h3>Tarefa 3</h3>
-      <p>Tarefa: Cada processo mantém localmente o vetor State[N]. Inicializa o State[N] com -1 (indicando estado “unknown”) para todos os demais processos e 0 para o próprio processo. Nesta tarefa ao executar um teste, o processo atualiza a entrada correspondente no vetor State[N]. Em cada intervalo de testes, mostre o vetor State[N]. 
-        <br>A primeira modificação é criar um vetor State para cada nodo:
-        </p>
-        <img src="./images/image5.png">
-        <p>Depois inicializá-los:</p>
-        <img src="./images/image6.png">
-        <p>Após isso é necessário atualizar o vetor State a cada teste</p>
-        <img src="./images/image7.png">
-        <p>A linha 70 checa se o processo testado está como estado “unknown”, caso sim, atualiza-se o vetor State do testador para considerar a falha testada. Caso não, e o processo testado estava considerado correto, ocorreu um evento, portanto incrementa-se o valor do State na posição do processo testado.</p>
-        <img src="./images/image8.png">
-        <h3>Tarefa 4</h3>
-      <p>Tarefa: Quando um processo correto testa outro processo correto obtém as informações de diagnóstico do processo testado sobre todos os processos do sistema exceto aqueles que testou nesta rodada, além do próprio testador. 
-        <br>
-        Para copiar atualizar o vetor State com informações do processo testado correto é necessária a modificação:
-      </p>
-      <img src="./images/image9.png">
-      <p>O for da linha 91 atualiza os estados dos processos que não foram testados pelo testador, ou seja, do processo próximo ao testado até o processo anterior ao testador. Por exemplo, considere o processo 0 como testador na figura abaixo.
-      </p>
-      <img src="./images/image10.png">
-      <p>Se o processo 1 foi testado correto, então o processo 0 atualiza suas informações sobre os processos 2, 3, 4 e 5.</p>
-      <img src="./images/image11.png">
-
-  </div>
-    <div class="card">
-      <h2>Algoritmo Vcube versão 2</h2>
-      <p>Este algoritmo foi implementado de forma que em cada intervalo de testes todos os logN clusters são testados.
-        <br>Um exemplo da função cis utilizada para determinar os testes executados por cada processo segue abaixo.
-      </p>
-      <img src="./images/image12.png">
-      <p>Foi criada uma estrutura para representar a lista de testes a executar de cada processo, sendo uma lista de inteiros.</p>
-      <img src="./images/image13.png">
-      <p> Observe que antes de executar os testes, cada processo deve atualizar sua lista de testes, pois caso algum processo esteja falho, é necessário atualizar quem serão os testados de cada testador. Portanto foi criada a função resetaLista que reseta a lista de testes de cada processo e a função criaListasTestes que define os testes realizados da rodada. </p>
-      <img src="./images/image14.png">
-      <p>Exemplo de execução da função criaListasTestes para N=8:<br>
-        O processo 0 é testado por 1 no primeiro cluster, por 2 e 3 no segundo cluster e por 4, 5, 6 e 7 no último cluster. Portanto, caso 1, 2 e 4 estejam corretos, é inserido 0 na lista de testes de cada um destes.
-        <br>        
-        Na figura abaixo, o loop da linha 180 percorre a lista de testes do processo atual. As linhas 184 e 186 atualizam o estado do processo testado para correto. Como o processo está correto, o for da linha 188 atualiza o vetor State do testador com qualquer novidade. 
-      </p>
-      <img src="./images/image15.png">
-      <h3>Latência e número de testes no melhor e pior caso</h3>
-      <p>Para discutir o melhor e o pior caso, duas definições são necessárias:
-        <br>
-        Latência: após a ocorrência de um evento quantas rodadas necessárias até que todos os processos saibam do evento?
-        <br>
-        Rodada: Uma rodada de testes do algoritmo VCube acontece quando todos os processos corretos testaram pelo menos um de seus clusters.
-      </p>
-      <h4>O pior caso</h4>
-      <p>O algoritmo original do VCube tem como pior caso log²N (na base 2), porém como testamos todos os clusters em um mesmo instante de tempo, o pior caso passa a ser logN.
-        <br>Exemplo:
-        <br><br>
-        Considere que o processo 0 falha no instante de tempo t0 e todos os demais processos estão corretos.
-        1 2 4 testam o processo 0 e descobrem que está falho em t3. Porém, antes dos processos 1 2 4 descobrirem o evento, os processos 3 5 6 testaram 1 2 4 em t2, logo será necessária mais uma rodada para que os outros processos descubram o evento.
-        <br><br>
-        Na segunda rodada, 3 5 6 testam os processos 1 2 4 e descobrem o evento. Porém, 7 testa 3 5 6 antes da descoberta do evento, logo será necessária mais uma rodada para que o processo 7 saiba do evento. 
-        <br><br>
-        Na próxima rodada, 7 testa 3 5 6 e descobre o evento no processo 0. Logo a latência foi de logN = 3 rodadas e de 69 testes.
-        <br><br>
-        Um possível agendamento de testes que exemplifica esse pior caso é o que segue abaixo.
-        </p>
-        <img src="./images/image16.png">
-        <p>Observe o resultado da primeira rodada abaixo. Apenas os processos 1, 2 e 4 descobrem o evento.</p>
-        <img src="./images/image17.png">
-        <p>Na segunda rodada os processos 3 5 6 também descobrem o evento.</p>
-        <img src="./images/image18.png">
-        <p>Como última rodada, o processo 7 testa os processos 3 5 6 e descobre o evento em 0.        </p>
-        <img src="./images/image19.png">
-        <h4>O melhor caso</h4>
-      <p>Os processos 1 2 4 testam o processo 0 e descobrem o evento. Um pouco depois desta descoberta 3 5 6 realizam seus testes da rodada em 1 2 4, descobrindo o evento. Logo depois, 7 testa os processos 3 5 6 e descobre o evento. Logo a latência foi de apenas 1 rodada, com 23 testes.
-        <br><br>
-        Agendamento:
-        </p>
-        <img src="./images/image20.png">
-        <p>Observe o resultado abaixo, todos os processos descobrem o evento no processo zero em apenas uma rodada.</p>
-        <img src="./images/image21.png">
-
-
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>Autor</h2>
-      <p>Fernando Zanutto M. Barbosa GRR20182625</p>
-    </div>
-    <div class="card">
-      <h3>Disciplina</h3>
-      <p> Prof. Elias P. Duarte Jr. <br> Sistemas Distribuídos - UFPR</p>
-    </div>
-    <div class="card">
-      <h3>Arquivos</h3>
-      <ul>
-        <li> <a href="files/cisj.c.txt">cisj.c</a></li>
-        <li> <a href="files/smpl.c.txt">smpl.c</a></li>
-        <li> <a href="files/tarefa1.c.txt">tarefa1.c</a></li>
-        <li> <a href="files/tarefa2.c.txt">tafefa2.c</a></li>
-        <li> <a href="files/tarefa3.c.txt">tarefa3.c</a></li>
-        <li> <a href="files/tarefa4.c.txt">tarefa4.c</a></li>
-        <li> <a href="files/tempo.c.txt">tempo.c</a></li>
-        <li> <a href="files/trabalho.c.txt">trabalho.c</a></li>
+      <h2>Simulador SMPL : Algoritmo VRing</h2>
+      <h3>Tarefa 0 : </h3>
+      <p> Digitar, compilar e executar o programa exemplo, tempo.c </p>
+      <p>-> Foi compilado o programa usando o makefile e executado o programa com ./tempo 3 </p>
+      
+      <h3>Tarefa 1 :</h3>
+      <p>Fazer cada um dos processos testar o seguinte no anel. Implemente o teste com a função status() do SMPL e imprimir (printf) o resultado de cada teste executado. Por exemplo: “O processo i testou o processo j correto no tempo tal.” 
+        <br>Foi acrescentado no case test um printf mostrando o teste correto do processo i no j (incrementando o token):  </p>
         
-      </ul>
-    </div>
-  </div>
-</div>
+        <p>case test: 
 
-<!-- <div class="footer">
-  <h2>Footer</h2>
-</div> -->
+            if (status(processo[token].id) != 0) // processo falho não testa 
+
+                break; 
+
+            printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
+
+            schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
+
+            printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time()); 
+
+            break; </p>
+      <p> Log de saída : </p>
+        <h3>Tarefa 2 :</h3>
+      <p> Cada processo correto executa testes até achar outro processo correto. Lembre-se de tratar o caso em que todos os demais processos estão falhos. Imprimir os testes e resultados.
+        <br>Foram feitas as seguintes alterações mostradas com comentários no case test :</p>  
+        
+        <p>-> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
+
+        schedule(fault, 31.0, 2);  // vai falhar nesse tempo 
+
+        schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
+      <p> Saída : </p>
+        <h3>Tarefa 3 : </h3>
+      <p> Cada processo mantém localmente o vetor State[N]. A entrada do vetor State[j] indica o estado do processo j. O estado de cada processo pode ser: -1 (unknown), 0 (correto) ou 1 (falho). Inicialize (para todos os processos) o State[N] com -1 (indicando estado “unknown”) para todos os demais processos e 0 para o próprio processo. Nesta tarefa ao executar um teste em um processo j, o testador atualiza a entrada correspondente no vetor State[j]. Em cada intervalo de testes, mostre o vetor State[N].
+        <br>Foram feitas as seguintes alterações no case test tratando os estados (-1,0,1) e os possíveis eventos que podem ocorrer:
+        </p>
+      
+        <p> case test: 
+
+            if (status(processo[token].id) != 0) // processo falho não testa 
+
+                break; 
+
+            printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
+
+            int t = (token+1)%N; // já que é um teste circular faço mod N 
+
+  
+
+            while (status(processo[t].id) != 0 && t != token){  // enquanto não acha um correto e não testou todos 
+
+                printf("O processo %d testou o processo %d falho no tempo %4.1f\n", token, t, time()); 
+
+                // tratando eventos 
+
+                if (processo[token].State[t] == -1) // se em estado unknown 
+
+                    processo[token].State[t] = 1; // atualiza para estado falho 
+
+                else if (processo[token].State[t]%2 == 0) // se par (Era correto e agora é falho -> evento) 
+
+                    processo[token].State[t]++; // incrementa 
+
+                t = (t+1)%N; // vai para o proximo processo considerando que é um teste circular             
+
+            }        
+
+             
+
+            // tratando eventos 
+
+            if (processo[token].State[t] == -1) // se em estado unknown 
+
+                processo[token].State[t] = 0; // atualiza para estado correto 
+
+            else if (processo[token].State[t]%2 == 1) // se ímpar (Era falho e agora é correto -> evento)       
+
+                processo[token].State[t]++; // incrementa 
+
+            printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time());                
+
+            printf("Vetor State resultante do processo %d: ", token); // mostra o vetor State 
+
+            for(int j=0; j<N; j++){ 
+
+                printf("%d ", processo[token].State[j]); 
+
+            } 
+
+            printf("\n"); 
+
+
+            schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
+
+            break; </p>
+        
+        <p>Log da saída :</p>
+        
+        <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
+
+          schedule(fault, 31.0, 2);  // vai falhar nesse tempo 
+
+          schedule(recovery, 61.0, 2); // vai recuperar nesse tempo </p>
+      
+         <p>Log da saída :</p>
+      
+        <h3>Tarefa 4</h3>
+      <p>Quando um processo correto testa outro processo correto obtém as informações de diagnóstico do processo testado sobre todos os processos do sistema exceto aqueles que testou nesta rodada, além do próprio testador. 
+        <br>
+        Através de um laço for acrescentado fora do laço de repetição while, para os testes corretos, é possivel salvar as informações fazendo uma cópia do vetor state : 
+
+        for (int j=(t+1)%N; j != token; j=(j+1)%N){  // copia o vetor state atualizando as informações do processo que esta testando sobre os demais que não foram testados na rodada 
+
+               processo[token].State[j] = processo[t].State[j];             
+
+        } 
+      </p>
+       <p>Log da saída :</p>
+       <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
+
+          schedule(fault, 31.0, 2);  // vai falhar nesse tempo 
+
+          schedule(recovery, 61.0, 2); // vai recuperar nesse tempo </p>
+      
+      <p>Log da saída :</p>
+      
+      
 
 </body>
 </html>
