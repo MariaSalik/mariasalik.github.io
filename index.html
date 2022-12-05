@@ -10,7 +10,7 @@
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
-  padding: 10px;
+  padding: 5px;
   background: #f1f1f1;
 }
 
@@ -158,7 +158,7 @@ body {
       <p>- Foram feitas as seguintes alterações no case test tratando os estados (-1,0,1) e os possíveis eventos que podem ocorrer:</p>
        <pre>
         <code>
-      case test: 
+        case test: 
             if (status(processo[token].id) != 0) // processo falho não testa
                 break; 
             printf("O processo %d vai testar no tempo %4.1f\n", token, time());
@@ -180,7 +180,7 @@ body {
             printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time());               
             printf("Vetor State resultante do processo %d: ", token); // mostra o vetor State 
             for(int j=0; j<N; j++){ 
-                printf("%d ", processo[token].State[j]);
+                printf("%d", processo[token].State[j]);
             } 
             printf("\n"); 
             schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
