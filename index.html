@@ -107,15 +107,18 @@ body {
       <h3>Tarefa 1 :</h3>
       <p>Fazer cada um dos processos testar o seguinte no anel. Implemente o teste com a função status() do SMPL e imprimir (printf) o resultado de cada teste executado. Por exemplo: “O processo i testou o processo j correto no tempo tal.” 
       <p>- Foi acrescentado no case test um printf mostrando o teste correto do processo i no j (incrementando o token):  </p>
-        
+      <pre>
+        <code>
         <p>case test:  </p>
 
-            <br>&npsp;if (status(processo[token].id) != 0) // processo falho não testa 
-                <br> &npsp;&npsp; break; 
-            <br>&npsp;printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
-            <br>&npsp;schedule(test, 30.0, token); // um novo teste daqui a esse tempo  
-            <br>&npsp;printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time());  
-             &npsp;break; </p>
+            <br>if (status(processo[token].id) != 0) // processo falho não testa 
+                <br> break; 
+            <br>printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
+            <br>schedule(test, 30.0, token); // um novo teste daqui a esse tempo  
+            <br>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time());  
+             break; </p>
+       </code>
+      </pre>
       <p> Log de saída : </p>
       
       <img src="./tarefa1.png">
