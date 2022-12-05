@@ -179,14 +179,14 @@ body {
                 processo[token].State[t]++; // incrementa 
             printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time());               
             printf("Vetor State resultante do processo %d: ", token); // mostra o vetor State 
-            for(int j=0; j<N; j++){ 
+            for(int j=0; j<N; j++){
                 printf("%d", processo[token].State[j]);
             } 
             printf("\n"); 
             schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
             break; 
         </code>
-      </pre>
+       </pre>
         <p>Log da saída :</p>
         <img src="./tarefa3.png">
         
