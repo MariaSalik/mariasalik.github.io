@@ -10,14 +10,14 @@
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
-  padding: 20px;
+  padding: 10px;
   background: #f1f1f1;
 }
 
 /* Header/Blog Title */
 .header {
   padding: 30px;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   background: white;
 }
@@ -170,7 +170,7 @@ body {
                     processo[token].State[t] = 1; // atualiza para estado falho 
                 else if (processo[token].State[t]%2 == 0) // se par (Era correto e agora é falho -> evento) 
                     processo[token].State[t]++; // incrementa 
-                t = (t+1)%N; // vai para o proximo processo considerando que é um teste circular   </p>          
+                t = (t+1)%N; // vai para o proximo processo considerando que é um teste circular           
             }
             // tratando eventos 
             if (processo[token].State[t] == -1) // se em estado unknown 
@@ -204,7 +204,8 @@ body {
       <p>- Através de um laço for acrescentado fora do laço de repetição while, para os testes corretos, é possivel salvar as informações fazendo uma cópia do vetor state :</p>
        <pre>
         <code>
-           for (int j=(t+1)%N; j != token; j=(j+1)%N){  // copia o vetor state atualizando as informações do processo que esta testando sobre os demais que não foram testados na rodada 
+           for (int j=(t+1)%N; j != token; j=(j+1)%N){  // copia o vetor state atualizando as informações do 
+                                                          processo que esta testando sobre os demais que não foram testados na rodada 
                processo[token].State[j] = processo[t].State[j];             
            } 
         </code>
