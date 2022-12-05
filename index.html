@@ -109,13 +109,13 @@ body {
       <p>- Foi acrescentado no case test um printf mostrando o teste correto do processo i no j (incrementando o token):  </p>
       <pre>
         <code>
-        <p>case test:  </p>
-            <br>if (status(processo[token].id) != 0) // processo falho não testa 
-                <br>  break; 
-            <br>printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
-            <br>schedule(test, 30.0, token); // um novo teste daqui a esse tempo  
-            <br>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time());  
-               <br>  break; </p>
+        case test:  
+            if (status(processo[token].id) != 0) // processo falho não testa 
+                break; 
+            printf("O processo %d vai testar no tempo %4.1f\n", token, time()); 
+            schedule(test, 30.0, token); // um novo teste daqui a esse tempo  
+            printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, (token+1)%N, time());  
+            break;
        </code>
       </pre>
       <p> Log de saída : </p>
@@ -127,18 +127,18 @@ body {
       <p>- Foram feitas as seguintes alterações mostradas com comentários no case test :</p>  
     <pre>
         <code>
-      <p> case test:
-        <br>if (status(processo[token].id) != 0) // processo falho não testa
-          <br> break;
-        <br>printf("O processo %d vai testar no tempo %4.1f\n", token, time());
-        <br>int t =(token+1)%N; // o próximo considerando que é um teste circular
-        <br>while (status(processo[t].id) != 0 && t != token){ // enquanto não acha um correto e testou todos
-            <br> printf("O processo %d testou o processo %d falho no tempo %4.1f\n", token, t, time());
-            <br> t =(t+1)%N; // o próximo considerando que é um teste circular
-        <br>}
-        <br>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time()); 
-        <br>schedule(test, 30.0, token);
-         break; </p>
+        case test:
+            if (status(processo[token].id) != 0) // processo falho não testa
+                break;
+            printf("O processo %d vai testar no tempo %4.1f\n", token, time());
+            int t =(token+1)%N; // o próximo considerando que é um teste circular
+            while (status(processo[t].id) != 0 && t != token){ // enquanto não acha um correto e testou todos
+                printf("O processo %d testou o processo %d falho no tempo %4.1f\n", token, t, time());
+                t =(t+1)%N; // o próximo considerando que é um teste circular
+            }
+            printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time()); 
+            schedule(test, 30.0, token);
+            break; 
          </code>
      </pre>
          
@@ -147,8 +147,8 @@ body {
       <p>- Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
       <pre>
         <code>
-        <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
-        <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
+          schedule(fault, 31.0, 2);  // vai falhar nesse tempo
+          schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  
         </code>
       </pre>
       <p> Log de saída : </p>
@@ -158,33 +158,33 @@ body {
       <p>- Foram feitas as seguintes alterações no case test tratando os estados (-1,0,1) e os possíveis eventos que podem ocorrer:</p>
        <pre>
         <code>
-      <p> case test: 
-            <br>if (status(processo[token].id) != 0) // processo falho não testa
-              <br> break; 
-            <br>printf("O processo %d vai testar no tempo %4.1f\n", token, time());
-            <br>int t = (token+1)%N; // já que é um teste circular faço mod N 
-            <br>while (status(processo[t].id) != 0 && t != token){  // enquanto não acha um correto e não testou todos 
-              <br> printf("O processo %d testou o processo %d falho no tempo %4.1f\n", token, t, time()); 
-              <br> // tratando eventos 
-              <br> if (processo[token].State[t] == -1) // se em estado unknown 
-                <br> processo[token].State[t] = 1; // atualiza para estado falho 
-              <br> else if (processo[token].State[t]%2 == 0) // se par (Era correto e agora é falho -> evento) 
-                <br> processo[token].State[t]++; // incrementa 
-              <br> t = (t+1)%N; // vai para o proximo processo considerando que é um teste circular   </p>          
-            <br>}
-            <br>// tratando eventos 
-            <br>if (processo[token].State[t] == -1) // se em estado unknown 
-                <p>processo[token].State[t] = 0; // atualiza para estado correto
-            <br>else if (processo[token].State[t]%2 == 1) // se ímpar (Era falho e agora é correto -> evento)       
-                <p>processo[token].State[t]++; // incrementa 
-            <br>printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time());               
-            <br>printf("Vetor State resultante do processo %d: ", token); // mostra o vetor State 
-            <br>for(int j=0; j<N; j++){ 
-              <br> printf("%d ", processo[token].State[j]);
-            <br>} 
-            <br>printf("\n"); 
-            <br>schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
-             break; </p>
+      case test: 
+            if (status(processo[token].id) != 0) // processo falho não testa
+                break; 
+            printf("O processo %d vai testar no tempo %4.1f\n", token, time());
+            int t = (token+1)%N; // já que é um teste circular faço mod N 
+            while (status(processo[t].id) != 0 && t != token){  // enquanto não acha um correto e não testou todos 
+                printf("O processo %d testou o processo %d falho no tempo %4.1f\n", token, t, time()); 
+                // tratando eventos 
+                if (processo[token].State[t] == -1) // se em estado unknown 
+                    processo[token].State[t] = 1; // atualiza para estado falho 
+                else if (processo[token].State[t]%2 == 0) // se par (Era correto e agora é falho -> evento) 
+                    processo[token].State[t]++; // incrementa 
+                t = (t+1)%N; // vai para o proximo processo considerando que é um teste circular   </p>          
+            }
+            // tratando eventos 
+            if (processo[token].State[t] == -1) // se em estado unknown 
+                processo[token].State[t] = 0; // atualiza para estado correto
+            else if (processo[token].State[t]%2 == 1) // se ímpar (Era falho e agora é correto -> evento)       
+                processo[token].State[t]++; // incrementa 
+            printf("O processo %d testou o processo %d correto no tempo %4.1f\n", token, t, time());               
+            printf("Vetor State resultante do processo %d: ", token); // mostra o vetor State 
+            for(int j=0; j<N; j++){ 
+                printf("%d ", processo[token].State[j]);
+            } 
+            printf("\n"); 
+            schedule(test, 30.0, token); // um novo teste daqui a esse tempo 
+            break; 
         </code>
       </pre>
         <p>Log da saída :</p>
@@ -193,8 +193,8 @@ body {
         <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
         <pre>
           <code>
-          <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
-          <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
+            schedule(fault, 31.0, 2);  // vai falhar nesse tempo  
+            schedule(recovery, 61.0, 2); // vai recuperar nesse tempo 
           </code>
        </pre>
       <p>Log da saída :</p>
@@ -214,8 +214,8 @@ body {
        <p> -> Acrescentando uma falha e recuperação do processo 2 além do 1 para teste :  
        <pre>
         <code>
-          <p>schedule(fault, 31.0, 2);  // vai falhar nesse tempo  </p>
-          <p>schedule(recovery, 61.0, 2); // vai recuperar nesse tempo  </p>
+          schedule(fault, 31.0, 2);  // vai falhar nesse tempo 
+          schedule(recovery, 61.0, 2); // vai recuperar nesse tempo 
         </code>
       </pre>
       
