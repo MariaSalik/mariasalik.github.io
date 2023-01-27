@@ -75,15 +75,15 @@ int main(int argc, char *argv[]) {
 
     schedule(fault, 1.0, 2);//processo 2 falha no tempo 1
     schedule(fault, 1.0, 4);
-    schedule(fault, 1.0,5);
+    schedule(fault, 1.0, 5);
 
-    // schedule(recovery, 61.0, 1);    
+    //schedule(recovery, 61.0, 1);    
     
     cause(&event, &token);
 
     puts("  Olá, sou o simulador SMPL vCube\n\n");
 
-    while (time() < 60.0) {  // while(time() < 150.0 ou < 90)
+    while (time() < 60.0) {  // while(time() < 150.0 ou < 60)
 
         switch (event) {
         case test:
@@ -91,8 +91,9 @@ int main(int argc, char *argv[]) {
                 nodo = cis(token, s); // recebe o resultado da função cis
                 for (i=0; i < nodo->size; i++){
                     proximo = nodo->nodes[i]; // o nodo seguinte
+                    // proximo correto
                     if (status(processo[proximo].id) == 0){
-                        // status do processo falho
+                        // status do processo testador falho
                         if (status(processo[token].id) != 0){ 
                             printf("   Processo %d testou o processo %d falho no tempo %4.1f\n", proximo, token, time());
                             // status unknown do processo

@@ -1,0 +1,703 @@
+  Olá, sou o simulador SMPL vCube
+
+
+   O processo 2 falhou no tempo 1.0
+   O processo 4 falhou no tempo 1.0
+   O processo 5 falhou no tempo 1.0
+   Processo 1 testou o processo 0 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 0 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 6 testou o processo 0 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 8 testou o processo 0 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [ -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 0 testou o processo 1 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 1 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 1 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 9 testou o processo 1 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 2 falho no tempo 30.0
+   Processo 0 testou o processo 2 falho no tempo 30.0
+   Processo 6 testou o processo 2 falho no tempo 30.0
+   Processo 10 testou o processo 2 falho no tempo 30.0
+   Vetor de estado state[0] = [  0  0  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 1 testou o processo 3 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 3 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 11 testou o processo 3 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 6 testou o processo 4 falho no tempo 30.0
+   Processo 0 testou o processo 4 falho no tempo 30.0
+   Processo 12 testou o processo 4 falho no tempo 30.0
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0 -1  1 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 7 testou o processo 5 falho no tempo 30.0
+   Processo 1 testou o processo 5 falho no tempo 30.0
+   Processo 13 testou o processo 5 falho no tempo 30.0
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0 -1  1 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 7 testou o processo 6 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 6 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 14 testou o processo 6 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0 -1  1 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 6 testou o processo 7 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 7 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 15 testou o processo 7 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [ -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [ -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 9 testou o processo 8 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 10 testou o processo 8 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 12 testou o processo 8 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 0 testou o processo 8 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [  0 -1  1 -1 -1 -1 -1 -1  0 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1 -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [  0 -1 -1 -1  1 -1 -1 -1  0 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [ -1 -1 -1 -1 -1  1 -1 -1 -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 8 testou o processo 9 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 11 testou o processo 9 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 13 testou o processo 9 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 1 testou o processo 9 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0  0 -1 -1 -1 -1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [  0 -1  1 -1 -1 -1 -1 -1  0 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1  0  0 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [  0 -1 -1 -1  1 -1 -1 -1  0 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [  0  0 -1 -1 -1  1 -1 -1  0  0 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1 -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 11 testou o processo 10 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 8 testou o processo 10 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 14 testou o processo 10 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 10 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0  0  1 -1 -1 -1 -1 -1  0  0  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0 -1 -1 -1 -1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[10] = [  0 -1  1 -1 -1 -1 -1 -1  0 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [  0 -1 -1 -1  1 -1 -1 -1  0 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [  0  0 -1 -1 -1  1 -1 -1  0  0 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1  0 -1  0 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 10 testou o processo 11 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 9 testou o processo 11 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 15 testou o processo 11 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 11 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0  0  1 -1 -1 -1 -1 -1  0  0  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [  0 -1 -1 -1  1 -1 -1 -1  0 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [  0  0 -1 -1 -1  1 -1 -1  0  0 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1  0 -1  0 -1 -1 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 13 testou o processo 12 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 14 testou o processo 12 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 8 testou o processo 12 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 6 testou o processo 12 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0 -1 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [  0 -1 -1 -1  1 -1 -1 -1  0 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[13] = [  0  0 -1 -1  1  1 -1 -1  0  0 -1 -1  0  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 12 testou o processo 13 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 15 testou o processo 13 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 9 testou o processo 13 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 13 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0 -1 -1  0  0 -1 -1]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [  0  0 -1 -1  1  1 -1 -1  0  0 -1 -1  0  0 -1 -1]
+   Vetor de estado state[13] = [  0  0 -1 -1  1  1 -1 -1  0  0 -1 -1  0  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1  0]
+----------------------------------------------------------------
+
+   Processo 15 testou o processo 14 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 12 testou o processo 14 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 10 testou o processo 14 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 6 testou o processo 14 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0 -1 -1  0  0 -1 -1]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0 -1 -1 -1 -1  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0 -1 -1  1  1 -1 -1  0  0 -1 -1  0  0 -1 -1]
+   Vetor de estado state[14] = [  0 -1  1 -1  1 -1  0 -1  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 14 testou o processo 15 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 13 testou o processo 15 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 11 testou o processo 15 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 15 correto no tempo 30.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0 -1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 1 testou o processo 0 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 0 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 6 testou o processo 0 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 8 testou o processo 0 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1 -1  1 -1 -1 -1  0 -1 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 0 testou o processo 1 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 1 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 1 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 9 testou o processo 1 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 2 falho no tempo 60.0
+   Processo 0 testou o processo 2 falho no tempo 60.0
+   Processo 6 testou o processo 2 falho no tempo 60.0
+   Processo 10 testou o processo 2 falho no tempo 60.0
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 1 testou o processo 3 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 3 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 11 testou o processo 3 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 6 testou o processo 4 falho no tempo 60.0
+   Processo 0 testou o processo 4 falho no tempo 60.0
+   Processo 12 testou o processo 4 falho no tempo 60.0
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 7 testou o processo 5 falho no tempo 60.0
+   Processo 1 testou o processo 5 falho no tempo 60.0
+   Processo 13 testou o processo 5 falho no tempo 60.0
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 7 testou o processo 6 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 6 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 14 testou o processo 6 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0 -1  0 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 6 testou o processo 7 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 7 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 15 testou o processo 7 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 9 testou o processo 8 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 10 testou o processo 8 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 12 testou o processo 8 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 0 testou o processo 8 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1 -1  1 -1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 8 testou o processo 9 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 11 testou o processo 9 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 13 testou o processo 9 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 1 testou o processo 9 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 11 testou o processo 10 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 8 testou o processo 10 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 14 testou o processo 10 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 10 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1  0  1  1  0 -1  0  0  0  0  0  0  0 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1 -1 -1  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[10] = [  0  0  1  0  1 -1  0 -1  0  0  0  0  0 -1  0 -1]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 10 testou o processo 11 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 9 testou o processo 11 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 15 testou o processo 11 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 3 testou o processo 11 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1  0  1  1  0 -1  0  0  0  0  0  0  0 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[10] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 13 testou o processo 12 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 14 testou o processo 12 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 8 testou o processo 12 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 6 testou o processo 12 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1  0  1  1  0 -1  0  0  0  0  0  0  0 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[10] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1 -1  1  1  0 -1  0  0  0 -1  0  0  0 -1]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 12 testou o processo 13 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 15 testou o processo 13 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 9 testou o processo 13 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 13 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1  0  1  1  0 -1  0  0  0  0  0  0  0 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[10] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 15 testou o processo 14 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 12 testou o processo 14 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 10 testou o processo 14 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 6 testou o processo 14 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1  0  1  1  0 -1  0  0  0  0  0  0  0 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[10] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 14 testou o processo 15 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 13 testou o processo 15 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 11 testou o processo 15 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Processo 7 testou o processo 15 correto no tempo 60.0
+   Obtendo diagnostico ...
+   Vetor de estado state[0] = [  0  0  1  0  1  1 -1 -1  0  0  0 -1  0 -1 -1 -1]
+   Vetor de estado state[1] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0 -1 -1]
+   Vetor de estado state[3] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[6] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[7] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[8] = [  0  0  1  0  1  1  0 -1  0  0  0  0  0  0  0 -1]
+   Vetor de estado state[9] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[10] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[11] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[12] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[13] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[14] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+   Vetor de estado state[15] = [  0  0  1  0  1  1  0  0  0  0  0  0  0  0  0  0]
+----------------------------------------------------------------
+
+
