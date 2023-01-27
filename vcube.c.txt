@@ -73,7 +73,7 @@ int main(int argc, char *argv[]) {
 
     // schedule(test, 29.0, 7);
 
-    schedule(fault, 1.0, 2);//processo 2 falha no tempo 1
+    schedule(fault, 1.0, 2); //processo 2 falha no tempo 1
     schedule(fault, 1.0, 4);
     schedule(fault, 1.0, 5);
 
@@ -83,7 +83,7 @@ int main(int argc, char *argv[]) {
 
     puts("  Olá, sou o simulador SMPL vCube\n\n");
 
-    while (time() < 60.0) {  // while(time() < 150.0 ou < 60)
+    while (time() < 90.0) {  // while(time() < 150.0 
 
         switch (event) {
         case test:
@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
                                 // torna o status do processo falho
                                 processo[proximo].state[token] = 1;
                             } 
-                            else if (processo[proximo].state[token] % 2 == 0){
+                            else if (processo[proximo].state[token] % 2 == 0){  
                                 processo[proximo].state[token] = processo[proximo].state[token] + 1; // incrementa
                             }
                         }
@@ -109,11 +109,11 @@ int main(int argc, char *argv[]) {
                         else{
                             printf("   Processo %d testou o processo %d correto no tempo %4.1f\n", proximo, token, time());
                             // status unknown do processo
-                            if (processo[proximo].state[token] == -1) {
+                            if (processo[proximo].state[token] == -1) { 
                                 // torna o status do processo correto
                                 processo[proximo].state[token] = 0;
                             } 
-                            else if (processo[proximo].state[token] % 2 == 1){
+                            else if (processo[proximo].state[token] % 2 == 1){ 
                                 processo[proximo].state[token] = processo[proximo].state[token] + 1; // incrementa
                             }
 
