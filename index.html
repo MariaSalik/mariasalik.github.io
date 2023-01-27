@@ -251,6 +251,9 @@ Em um intervalo de testes um processo correto testa um cluster até encontrar um
       <p> -> Latência e número de testes </p>
       <p>  O algoritmo VCube tem como latência no pior caso log²N, mas passa a ser logN testando todos os clusters em um mesmo instante de tempo. </p>
        <p>  São executados no máximo NlogN testes levando em consideração o total de logN clusters e há pelo menos um processo correto em cada cluster.</p>
+      <p>    </p>
+      <p> No case test do switch (event) foi criado primeiramente um laço para que todos os clusters fossem testados e também um segundo for para percorrer os nodos seguintes. Condiçoes foram implementadas para testar se o status do processo está correto ou falho, dependendo disso ações são tomadas. </p>
+      <img src="./test.jpeg">
       <p> Para os testes desse trabalho foi considerado o seguinte agendamento de testes como exemplo : </p>
       <p> Obs : Para cada processo i um teste é realizado. </p>
        <p>    </p>
@@ -260,14 +263,12 @@ Em um intervalo de testes um processo correto testa um cluster até encontrar um
        <p>    </p>
       <p> O algoritmo foi implementado para fazer testes enquanto o tempo for menor que 90s ( while (time() < 90.0) ) e foram feitos testes para valores de N igual a 8, 14 e 16.  </p>
        <p> A cada intervalo de testes, o estado de cada processo é impresso e ao final temos então a rodada completa, como mostram os logs a seguir :   </p>
-      <p> N = 8 :</p>
+      <p> -> N = 8 </p>
       <li> <a href="/log_N8.txt">visualização do log</a></li>
-      <img src="./log1.jpeg">
-      <img src="./log2.jpeg">
       <p>    </p>
-      <p> N = 14 :</p>
+      <p> -> N = 14 </p>
       <li> <a href="/log_N14.txt">visualização do log</a></li>
-      <p> N = 16 :</p>
+      <p> -> N = 16 </p>
        <li> <a href="/log_N16.txt">visualização do log</a></li>
       
     </div> 
