@@ -279,7 +279,7 @@ Em um intervalo de testes um processo correto testa um cluster até encontrar um
       <h3>Arquivos</h3>
       <ul>
         
-        <li> <a href="/vcube_assincrono.c.txt">vcube_assincrono.c</a></li>
+        <li> <a href="/vcube_assicrono.c.txt">vcube_assincrono.c</a></li>
         <li> <a href="rand.c.txt">rand.c</a></li>
         <li> <a href="/smpl_assincrono.c.txt">smpl.c</a></li>
         <li> <a href="/cisj.c.txt">cisj.c</a></li>
@@ -287,7 +287,7 @@ Em um intervalo de testes um processo correto testa um cluster até encontrar um
         <p> O vCube agora foi modificado para o modelo assíncrono, onde a cada teste de processo correto, o testador determina com base em uma probabilidade definida que o teste será uma falsa suspeita. Então, quando processo obtém a informação de que foi vítima de uma falsa suspeita, o processo encerra a execução e sai do sistema</p>
         <p> A imagem abaixo mostra a mudança implementada no código :  </p>
         <p>    </p>
-       <img src="./vcube.assicrono.png">
+       <img src="./vcube.assincrono.png">
        <p>    </p>
        <p> O algoritmo foi implementado para fazer testes enquanto o tempo for menor que 90s ( while (time() < 90.0) ) e foram feitos testes para valores de N igual a 8, 14 e 16 com probabilidade de suspeitar de falho gerada aleatoriamente pelo função rand() % 100 +1 e o valor para testar se é uma falsa suspeita de falho (correto) igual a 10%, 30%, 50% e 70%.  </p>
        <p> A cada intervalo de testes, o estado de cada processo é impresso e ao final temos então o número de rodadas completa e também o número de rodadas entre uma falsa suspeita e a saída do processo do sistema como mostram os logs a seguir :   </p>
