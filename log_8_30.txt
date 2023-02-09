@@ -1,0 +1,120 @@
+./vcube 8 30
+  Olá, sou o simulador SMPL vCube
+
+
+   Processo 2 testou o processo 0 falho no tempo 30.0
+   Processo 4 testou o processo 0 falho no tempo 30.0
+   Vetor de estado state[1] = [  0  0 -1 -1 -1 -1 -1 -1]
+   Vetor de estado state[2] = [  1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [ -1 -1 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[4] = [  1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[5] = [ -1 -1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[6] = [ -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[7] = [ -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 5 testou o processo 1 falho no tempo 30.0
+   Vetor de estado state[2] = [  1 -1  0 -1 -1 -1 -1 -1]
+   Vetor de estado state[3] = [  0  0 -1  0 -1 -1 -1 -1]
+   Vetor de estado state[4] = [  1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[5] = [ -1  1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[6] = [ -1 -1 -1 -1 -1 -1  0 -1]
+   Vetor de estado state[7] = [ -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 6 testou o processo 2 falho no tempo 30.0
+   Vetor de estado state[3] = [  1  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[4] = [  1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[5] = [ -1  1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[6] = [ -1 -1  1 -1 -1 -1  0 -1]
+   Vetor de estado state[7] = [ -1 -1 -1 -1 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 7 testou o processo 3 correto no tempo 30.0
+   Vetor de estado state[3] = [  1  0  0  0 -1 -1 -1 -1]
+   Vetor de estado state[4] = [  1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[5] = [ -1  1 -1 -1 -1  0 -1 -1]
+   Vetor de estado state[6] = [ -1 -1  1 -1 -1 -1  0 -1]
+   Vetor de estado state[7] = [  1  0  0  0 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 5 testou o processo 4 correto no tempo 30.0
+   Processo 6 testou o processo 4 correto no tempo 30.0
+   Processo 3 testou o processo 4 correto no tempo 30.0
+   Vetor de estado state[3] = [  1  0  0  0  0 -1 -1 -1]
+   Vetor de estado state[4] = [  1 -1 -1 -1  0 -1 -1 -1]
+   Vetor de estado state[5] = [  1  1 -1 -1  0  0 -1 -1]
+   Vetor de estado state[6] = [  1 -1  1 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  1  0  0  0 -1 -1 -1  0]
+----------------------------------------------------------------
+
+   Processo 4 testou o processo 5 correto no tempo 30.0
+   Processo 7 testou o processo 5 correto no tempo 30.0
+   Processo 3 testou o processo 5 correto no tempo 30.0
+   Vetor de estado state[3] = [  1  1  0  0  0  0 -1 -1]
+   Vetor de estado state[4] = [  1  1 -1 -1  0  0 -1 -1]
+   Vetor de estado state[5] = [  1  1 -1 -1  0  0 -1 -1]
+   Vetor de estado state[6] = [  1 -1  1 -1  0 -1  0 -1]
+   Vetor de estado state[7] = [  1  1  0  0  0  0 -1  0]
+----------------------------------------------------------------
+
+   Processo 7 testou o processo 6 correto no tempo 30.0
+   Processo 3 testou o processo 6 falho no tempo 30.0
+   Vetor de estado state[3] = [  1  1  0  0  0  0  1 -1]
+   Vetor de estado state[4] = [  1  1  1 -1  0  0  0 -1]
+   Vetor de estado state[5] = [  1  1 -1 -1  0  0 -1 -1]
+   Vetor de estado state[7] = [  1  1  1  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 7 falho no tempo 30.0
+   Vetor de estado state[3] = [  1  1  0  0  0  0  1  1]
+   Vetor de estado state[4] = [  1  1  1 -1  0  0  0 -1]
+   Vetor de estado state[5] = [  1  1  1  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 0 falho no tempo 60.0
+   Processo 4 testou o processo 0 falho no tempo 60.0
+   Vetor de estado state[3] = [  1  1  0  0  0  0  1  1]
+   Vetor de estado state[4] = [  1  1  1 -1  0  0  0 -1]
+   Vetor de estado state[5] = [  1  1  1  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 1 falho no tempo 60.0
+   Processo 5 testou o processo 1 falho no tempo 60.0
+   Vetor de estado state[3] = [  1  1  0  0  0  0  1  1]
+   Vetor de estado state[4] = [  1  1  1 -1  0  0  0 -1]
+   Vetor de estado state[5] = [  1  1  1  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 2 falho no tempo 60.0
+   Processo 4 testou o processo 2 falho no tempo 60.0
+   Vetor de estado state[3] = [  1  1  1  0  0  0  1  1]
+   Vetor de estado state[4] = [  1  1  1 -1  0  0  0 -1]
+   Vetor de estado state[5] = [  1  1  1  0  0  0  0  0]
+----------------------------------------------------------------
+
+   Processo 5 testou o processo 3 correto no tempo 60.0
+   Vetor de estado state[3] = [  1  1  1  0  0  0  1  1]
+   Vetor de estado state[4] = [  1  1  1 -1  0  0  0 -1]
+   Vetor de estado state[5] = [  1  1  1  0  0  0  1  1]
+----------------------------------------------------------------
+
+   Processo 5 testou o processo 4 correto no tempo 60.0
+   Vetor de estado state[3] = [  1  1  1  0  1  0  1  1]
+   Vetor de estado state[5] = [  1  1  1  0  0  0  1  1]
+----------------------------------------------------------------
+
+   Vetor de estado state[3] = [  1  1  1  0  1  1  1  1]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 6 falho no tempo 60.0
+   Vetor de estado state[3] = [  1  1  1  0  1  1  1  1]
+----------------------------------------------------------------
+
+   Processo 3 testou o processo 7 falho no tempo 60.0
+   Vetor de estado state[3] = [  1  1  1  0  1  1  1  1]
+----------------------------------------------------------------
+
+O número de rodadas é : 16
+O número de rodadas entre uma falsa suspeita e a saída do processo do sistema é : 7
+
