@@ -285,7 +285,7 @@ Em um intervalo de testes um processo correto testa um cluster até encontrar um
         <li> <a href="/cisj.c.txt">cisj.c</a></li>
         
         <p>     O vCube agora foi modificado para o modelo assíncrono, onde a cada teste de processo correto, o testador determina com base em uma probabilidade definida que o teste será uma falsa suspeita. Então, quando o processo obtém a informação de que foi vítima de uma falsa suspeita, o processo encerra a execução e sai do sistema</p>
-        <p>     No else que representa o status do processo testador correto a análise de suspeita de falho foi acrescentada, com uma probabilidade calculada para se obter uma falsa suspeita ou não. Se não for falsa suspeita de falho, ele de fato está falho, então o processo sai definitivamente do sistema e o vetor state é atualizado. Foi também incrementado o contador que representa o número de rodadas entre uma falsa suspeita e a saída do processo do sistema.  </p>
+        <p>     No else que representa o status do processo testador correto a análise de suspeita de falho foi acrescentada, com uma probabilidade calculada para se obter uma falsa suspeita ou não. Se não for falsa suspeita de falho (comparado com o valor de X passado na execução), ele de fato está falho, então o processo sai definitivamente do sistema e o vetor state é atualizado. Foi também incrementado o contador que representa o número de rodadas entre uma falsa suspeita e a saída do processo do sistema.  </p>
         <p> A imagem abaixo mostra a mudança implementada no código :  </p>
         <p>    </p>
        <img src="./vcube.assincrono.png">
