@@ -292,7 +292,7 @@ Em um intervalo de testes um processo correto testa um cluster até encontrar um
        <p>    </p>
        <p>      O algoritmo foi implementado para fazer testes enquanto o tempo for menor que 90s ( while (time() < 90.0) ) e foram feitos testes para valores de N igual a 8, 14 e 16 com probabilidade de suspeitar de falho gerada aleatoriamente pelo função rand() % 100 +1 e o valor para testar se é uma falsa suspeita de falho (correto) igual a 10%, 30%, 50% e 70%.  </p>
        <p> A cada intervalo de testes, o estado de cada processo é impresso e ao final temos então o número de rodadas completa e também o número de rodadas entre uma falsa suspeita e a saída do processo do sistema como mostram os logs a seguir :   </p>
-       <p> OBS : Para poder usar a função rand() foi chamada a função  srand(time(NULL)) sendo necessrário mudar no arquivo smpl.h o nome da função time() do dimulador para não ter conflito com a função time() da biblioteca C.   </p>
+       <p> OBS : Para poder usar a função rand() foi chamada a função  srand(time(NULL)) sendo necessrário mudar no arquivo smpl.h o nome da função time() do simulador para não ter conflito com a função time() da biblioteca C.   </p>
         <p>    </p>
         <p style="color: #FF69B4"> N = 8 </p>
         <p> -  Valor falsa suspeita de falho 10%</p>
